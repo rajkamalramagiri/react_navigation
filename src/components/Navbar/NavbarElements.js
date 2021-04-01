@@ -4,12 +4,14 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   background: #63d471;
-  margin: 0;
+  margin: -10px;
   height: 85px;
   display: flex;
   justify-content: space-between;
   ${"" /* padding: 0.2rem calc((100vw - 1000px) / 2); */}
   z-index: 12;
+  position: fixed;
+  width: 100%;
   /* Third Nav */
   /* justify-content: flex-start; */
 `;
@@ -38,7 +40,6 @@ export const Bars = styled(FaBars)`
     top: 0;
     right: 0;
     transform: translate(-100%, 75%);
-
     font-size: 1.8rem;
     cursor: pointer;
   }
